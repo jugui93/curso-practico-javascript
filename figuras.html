@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geométricas | Curso Practico JS</title>
+    <style>
+        body{
+            font-family: 'Quicksand', sans-serif;
+        }
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-image:url(https://tse4.mm.bing.net/th?id=OIP.4XU6YDLZ3Iqof0l-4ZJDmAHaE8) ;
+        }
+        .fig-container {
+            display: grid;
+            width: 400px;
+            background-color: white;
+        }
+        img {
+            height: 300px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="fig-container">
+            <header>
+            <h1>Figuras geométricas</h1>
+            <p>Este es el primer taller del curso práctico de Javascript</p>
+            </header>
+            <section>
+                <h2>Calcula el área y perímetro de un cuadrado</h2>
+                <img src="https://i1.wp.com/www.zekagraphic.com/wp-content/uploads/2021/03/Square-Shapes-Psychology-in-Graphic-Design.jpg?resize=768%2C384&ssl=1" alt="square">
+                <form >
+                    <label for="InputCuadrado">Escribe cuánto mide cada lado de tu cuadrado: </label>
+                    <input id="InputCuadrado" type="number">
+                    <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
+                    <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+                </form>
+            </section>
+            <section>
+                <h2>Calcula el área y perímetro de un triángulo</h2>
+                <img src="https://i1.wp.com/www.zekagraphic.com/wp-content/uploads/2021/03/Triangle-Shapes-Psychology-in-Graphic-Design.jpg?resize=768%2C384&ssl=1" alt="Triangle">
+                <form >
+                    <label for="InputLado1">Escribe cuánto mide el lado 1 de tu triangulo: </label>
+                    <input id="InputLado1" type="number">
+                    <label for="InputLado2">Escribe cuánto mide el lado 2 de tu triangulo: </label>
+                    <input id="InputLado2" type="number">
+                    <label for="InputBase">Escribe cuánto mide la base de tu triangulo: </label>
+                    <input id="InputBase" type="number">
+                    <label for="InputAltura">Escribe cuánto mide la altura de tu triangulo: </label>
+                    <input id="InputAltura" type="number">
+                    <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
+                    <button type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
+                </form>
+            </section>
+            <section>
+                <h2>Calcula el área y perímetro de un circulo</h2>
+                <img src="https://i2.wp.com/www.zekagraphic.com/wp-content/uploads/2021/03/Circle-Shapes-Psychology-in-Graphic-Design.jpg?resize=768%2C384&ssl=1" alt="circle">
+                <form >
+                    <label for="InputCirculo">Escribe cuánto mide el radio de tu círculo: </label>
+                    <input id="InputCirculo" type="number">
+                    <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
+                    <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
+                </form>
+            </section>
+
+            <script src="./figuras.js"></script>
+        </div>
+    </div>
+</body>
+</html>
