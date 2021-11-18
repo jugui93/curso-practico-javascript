@@ -10,10 +10,10 @@ function calcularPrecioConDescuento (precio, descuento) {
 
 function onClickButtonPriceDiscount() {
     const inputPrice = document.getElementById("InputPrice");
-    const priceValue = InputPrice.value;
+    const priceValue = inputPrice.value;
 
     const inputDiscount = document.getElementById("InputDiscount");
-    const discountValue = InputDiscount.value;
+    const discountValue = inputDiscount.value;
 
     const precioConDescuento = calcularPrecioConDescuento(priceValue, discountValue);
 
