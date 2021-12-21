@@ -5,9 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Promedio | Curso práctico de Javascript en Platzi</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        header {
+            border: 1px solid;
+            width: 600px;
+            margin: auto;
+        }
+        section{
+            border: 1px solid;
+            width: 600px;
+            margin: auto;
+        }
+        label{
+            display: block;
+            margin-bottom: 8px;   
+        }
+        button {
+            display: block;
+            margin: auto;
+            margin-top: 8px;
+        }
+    </style>
 </head>
 <body>
+    <header>
     <h1>Promedio</h1>
+    <script src="./promedio.js"></script>
+    <p>Este es el segundo taller del Curso práctico de Javascript</p>
+    </header>
+    <section>
+        <h2>Calcula el promedio de una lista de numeros</h2>
+
+        <form action="">
+            <label for="InputNumbers">Escribe tu lista de números, sin espacio, separados por coma(,)</label>
+            <input id="InputNumbers">
+
+            <button type="button" onclick="onClickButtonAverage()">Calcular el promedio</button>
+
+            <p id="ResultAverage"></p>
+        </form>
+
+    </section>   
     <script src="./promedio.js"></script>
 </body>
 </html>

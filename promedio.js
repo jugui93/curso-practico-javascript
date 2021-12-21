@@ -1,5 +1,6 @@
 
 
+
 function calcularMediaAritmetica(lista) {
     /* let sumaLista = 0;
 
@@ -15,3 +16,15 @@ function calcularMediaAritmetica(lista) {
 
     return promedioLista;
 }
+
+function onClickButtonAverage() {
+    const inputNumbers = document.getElementById("InputNumbers");
+    const inputNumbers1 = inputNumbers.value;
+    const listNumbers = inputNumbers1.split(',').map(Number) ;
+    
+    const promedio = calcularMediaAritmetica(listNumbers);
+
+    const resultAverage = document.getElementById("ResultAverage");
+    resultAverage.innerText = `El promedio es: \$${promedio}`;
+}
+
